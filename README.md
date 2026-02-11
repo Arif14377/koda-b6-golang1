@@ -6,10 +6,10 @@ Membuat program hitung luas dan keliling lingkaran
 
 - mendeklarasikan variable dengan :=
 
-```go
-	pi := 3.14
-	r := 18.0
-```
+  ```go
+  pi := 3.14
+  r := 18.0
+  ```
 
 - membuat function dengan awalan func dan mendeklarasikan tipe data parameter dan return function
 
@@ -25,7 +25,7 @@ Membuat program hitung luas dan keliling lingkaran
 
 - memakai fmt.Printf() dari package fmt untuk print literal string di console (tidak bisa print dengan tipe data berbeda jika println)
 
-```go
-	fmt.Printf("hasil luas lingkaran adalah: ,%f\n", luasLingkaran)
-	fmt.Printf("hasil keliling lingkaran adalah: ,%f\n", kelilingLingkaran)
-```
+  ```go
+  fmt.Printf("hasil luas lingkaran adalah: ,%f\n", luasLingkaran)
+  fmt.Printf("hasil keliling lingkaran adalah: ,%f\n", kelilingLingkaran)
+  ```
