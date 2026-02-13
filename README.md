@@ -2,9 +2,12 @@
 
 Membuat program hitung luas dan keliling lingkaran
 
+## Update:
+Membuat menjadi interaktif CLI.
+
 ## Pembelajaran:
 
-- mendeklarasikan variable dengan :=
+- mendeklarasikan variable dengan := (wajib inisiasi value jika pakai :=)
 
   ```go
   pi := 3.14

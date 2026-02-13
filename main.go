@@ -3,14 +3,42 @@ package main
 import "fmt"
 
 func main() {
-	pi := 3.14
-	r := 18.0
+	// pi := 3.14
+	// r := 18.0
+	var appHitung int
 
-	luasLingkaran := luasLingkaran(pi, r)
-	kelilingLingkaran := kelilingLingkaran(pi, r)
+	PI := 3.14
+	var r float64
 
-	fmt.Printf("hasil luas lingkaran adalah: ,%f\n", luasLingkaran)
-	fmt.Printf("hasil keliling lingkaran adalah: ,%f\n", kelilingLingkaran)
+	fmt.Println("# Hitung Luas dan Keliling Lingkaran.")
+	fmt.Println("Pilih aplikasi hitung:")
+	fmt.Println("1. Luas lingkaran")
+	fmt.Println("2. Keliling lingkaran")
+
+	for true {
+		fmt.Printf("%s", "Masukkan pilihan: ")
+		fmt.Scanf("%d", &appHitung)
+
+		if appHitung > 2 || appHitung < 1 {
+			fmt.Println("pilihan tidak tersedia.")
+			continue
+		}
+
+		switch appHitung {
+		case 1:
+			fmt.Printf("%s", "Masukkan jari-jari lingkaran: ")
+			fmt.Scanf("%f", &r)
+			luasLingkaran := luasLingkaran(PI, r)
+			fmt.Printf("hasil luas lingkaran adalah: %f\n", luasLingkaran)
+		case 2:
+			fmt.Printf("%s", "Masukkan jari-jari lingkaran: ")
+			fmt.Scanf("%f", &r)
+			kelilingLingkaran := kelilingLingkaran(PI, r)
+			fmt.Printf("hasil keliling lingkaran adalah: %f\n", kelilingLingkaran)
+		}
+		break
+	}
+
 }
 
 func luasLingkaran(pi float64, r float64) float64 {
@@ -18,5 +46,5 @@ func luasLingkaran(pi float64, r float64) float64 {
 }
 
 func kelilingLingkaran(pi float64, r float64) float64 {
-	return 2 * pi *r
+	return 2 * pi * r
 }
